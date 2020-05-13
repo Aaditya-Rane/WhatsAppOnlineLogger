@@ -64,7 +64,10 @@ def write_a_message(message, delay = 3):
     message_element.send_keys(Keys.ENTER)
 
 
-chats_to_checks = ['Dilip Rane', 'Gayatri Suslade', 'Kalpak Tole', 'Sarvesh Bhambore', 'Arsh Jamdar']
+chats_to_checks = list(filter(None,open("accountToCheck.txt").read().split("\n")))
+
+print("All Chats to check -->")
+print(chats_to_checks)
 
 log_files_path = "OnlineLog\\"
 log_files_handle = {}
