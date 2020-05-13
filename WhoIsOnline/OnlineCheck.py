@@ -95,7 +95,8 @@ while True:
                 f.write(current_time + " offline\n")
                 current_online_status[k] = False
             f.close()
-
+            
+            #name of the person to send message 
             if (k == 'Gayatri Suslade') and online_status:
                 if current_online_status[k] == False:
                     write_a_message(k + ":: online activity detected at your account")
